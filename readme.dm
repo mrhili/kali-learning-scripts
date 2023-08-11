@@ -7,3 +7,8 @@
 #Simple file manager list and navigate and serach
 
 /files-manager-script
+
+
+#generate good passwords and evaluate them
+
+/password-evaluator and /password-generator
