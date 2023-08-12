@@ -1,14 +1,18 @@
-#Some scripts i write when i was teatching kali linux
+# Some scripts i write when i was teatching kali linux
 
-#Backup scripts for youre favorite folder
+# Backup scripts for youre favorite folder
 
 /backup-script-work-with-crontab
 
-#Simple file manager list and navigate and serach
+# Simple file manager list and navigate and serach
 
 /files-manager-script
 
 
-#generate good passwords and evaluate them
+# generate good passwords and evaluate them
 
 /password-evaluator and /password-generator
+
+# Translate popular commands from linux to powershell
+
+/basic-bash2powershell-translator

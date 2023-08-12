@@ -1,4 +1,4 @@
-#simple file manager script
+# simple file manager script
 
 
 type 1 for listing files
@@ -13,6 +13,6 @@ type q for quitting
 
 
 
-#Dont forget to chmod u+x the script before using
+# Dont forget to chmod u+x the script before using
 
-#then run the script with ./file-manager.sh
+# then run the script with ./file-manager.sh
