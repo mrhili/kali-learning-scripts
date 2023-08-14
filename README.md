@@ -16,3 +16,8 @@
 ## Translate popular commands from linux to powershell
 
 basic-bash2powershell-translator/basictranslator.sh curl ipinfo.io/52.156.12.167
+
+
+## Offline mac search
+
+/offline-mac-search/search.sh 50:46:5D:6E:8C:20
