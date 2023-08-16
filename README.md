@@ -18,6 +18,10 @@
 basic-bash2powershell-translator/basictranslator.sh curl ipinfo.io/52.156.12.167
 
 
-## Offline mac search
+## Offline mac research
 
-/offline-mac-search/search.sh 50:46:5D:6E:8C:20
+/offline-mac-research/search.sh 50:46:5D:6E:8C:20
+
+## Searc ip address from mac address in youre local network
+
+/search-local-ip-from-mac/search.sh 50:46:5D:6E:8C:20
