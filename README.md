@@ -39,6 +39,32 @@ Example 2
 /monitor/unmonitor.sh wlan0
 
 
+# Obfuscating a script using python and deobfuscating it and executing it or output it on the shell
+
+
+## Obfuscating
+Obfuscating using base64
+
+    ## Example
+
+        python3 /obfs_python/obfs.py example.py obfs.py
+
+## DeObfuscating and executing
+Deobfuscating using base64
+
+    ## Example
+
+        python3 /obfs_python/deobfs.py obfs.py --execute
+
+## DeObfuscating and saving
+Deobfuscating using base64
+
+    ## Example
+
+        python3 /obfs_python/deobfs.py obfs.py --output=reveal.py
+
+
+-----------------------
 
 
 Ideas and what i need to do:
@@ -46,5 +72,6 @@ Ideas and what i need to do:
 -Make all the scripts in one script like the lazy script
 
 -in monitor script i should add more scripts minimonitor (no kill) pidimonoitor (Just monitor)
+
 
 

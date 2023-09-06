@@ -1,0 +1,1 @@
+print('Hello world this is just an example of deobfuscation by AmineOnline')
