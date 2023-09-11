@@ -3,7 +3,7 @@ import sys
 
 # Check if the correct number of arguments are provided
 if len(sys.argv) != 3:
-    print("Usage: python encode_script.py <input_script_path> <output_script_path>")
+    print("Usage: python obfs.py <input_script_path> <output_script_path>")
     sys.exit(1)
 
 input_script_path = sys.argv[1]

@@ -22,8 +22,4 @@ Deobfuscating using base64
 
         python3 deobfs.py obfs.py --output=reveal.py
 
-
-
-
-
 # Dont forget to have python3 before lunching the script
