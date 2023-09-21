@@ -62,7 +62,14 @@ Deobfuscating using base64
     ## Example
 
         python3 /obfs_python/deobfs.py obfs.py --output=reveal.py
+## Kali linux staring configuration
 
+    ## Example
+    ./configure/configure.sh
+
+    output:
+        [+] Update and upgrade machine
+        [OK]
 
 -----------------------
 
@@ -72,6 +79,8 @@ Ideas and what i need to do:
 -Make all the scripts in one script like the lazy script
 
 -in monitor script i should add more scripts minimonitor (no kill) pidimonoitor (Just monitor)
+
+-a script to chmod all the scripts
 
 
 
