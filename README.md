@@ -39,7 +39,7 @@ Example 2
 /monitor/unmonitor.sh wlan0
 
 
-# Obfuscating a script using python and deobfuscating it and executing it or output it on the shell
+## Obfuscating a script using python and deobfuscating it and executing it or output it on the shell
 
 
 ## Obfuscating
@@ -71,7 +71,12 @@ Deobfuscating using base64
         [+] Update and upgrade machine
         [OK]
 
------------------------
+
+## REDHCP
+
+/redhcp/redhcp.sh
+
+# -----------------------
 
 
 Ideas and what i need to do:
