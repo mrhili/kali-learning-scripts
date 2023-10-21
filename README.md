@@ -76,7 +76,31 @@ Deobfuscating using base64
 
 /redhcp/redhcp.sh
 
+
+
+# AUtomatic analyzer for WFUZZ
+
+First
+Change the variable for common variables then lunch the script
+
+col2_value=200
+col3_value=29
+col5_value=190
+col7_min=3700
+col7_max=380
+
+Example
+
+./analyze.sh
+
+
+
+
 # -----------------------
+
+
+
+
 
 
 Ideas and what i need to do:
