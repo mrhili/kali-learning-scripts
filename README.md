@@ -94,8 +94,24 @@ Example
 ./analyze.sh
 
 
+## Proof of concept of localStorage Stealer
 
+    ## Usage
+    git clone https://github.com/mrhili/demo-localStorage-stealer
 
+## CTF GAME : HACKSIM GAME
+
+    ## Usage
+    git clone https://github.com/mrhili/HackSim && cd HackSim && python3 -m pip install -r requirements.txt && python3 main.py
+
+## Real GAME HACKED : Guess this code by mansour code
+
+    git clone https://github.com/mrhili/guessthiscode.com-userscript
+    addit to temper-monkey and visit guessthiscode.com and play the hack
+
+## Play with cryptography :VGNR
+
+    git clone https://github.com/mrhili/vgnr && cd vgnr && python3 -m pip install -e
 # -----------------------
 
 
