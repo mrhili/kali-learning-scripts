@@ -13,6 +13,12 @@
 
 /password-evaluator/evaluator.sh and /password-generator/generator.sh passwords.txt
 
+
+## Regenerate machine id
+
+sudo /machine-id-regenaration/re.sh
+
+
 ## Translate popular commands from linux to powershell
 
 /basic-bash2powershell-translator/basictranslator.sh curl ipinfo.io/52.156.12.167
