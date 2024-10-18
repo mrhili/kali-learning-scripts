@@ -8,15 +8,17 @@
 
 /files-manager-script/manager
 
-
 ## generate good passwords and evaluate them
 
 /password-evaluator/evaluator.sh and /password-generator/generator.sh passwords.txt
 
-
 ## Regenerate machine id
 
 sudo /machine-id-regenaration/re.sh
+
+## Regenerate machine id
+
+sudo /hostname-change/change.sh
 
 
 ## Translate popular commands from linux to powershell

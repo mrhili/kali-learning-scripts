@@ -78,6 +78,6 @@ hostnamectl
 echo "Machine ID has been regenerated. Please reboot the system to apply the changes."
 
 # Advise the user to change the hostname
-echo "For further anonymity, consider changing your hostname using 'sudo hostnamectl set-hostname NEW_HOSTNAME'."
+echo "For further anonymity, consider changing your hostname using 'sudo hostnamectl set-hostname <NEW_HOSTNAME>'."
 
 exit 0
