@@ -85,6 +85,11 @@ Deobfuscating using base64
 /redhcp/redhcp.sh
 
 
+## DIOS FOR SQL INJECTION
+
+/dios-ascii-hex/dios.sh
+
+
 
 # AUtomatic analyzer for WFUZZ
 
