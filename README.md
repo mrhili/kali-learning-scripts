@@ -47,6 +47,22 @@ Example 2
 /monitor/unmonitor.sh wlan0
 
 
+## Simple ip generation and verry flexible
+
+
+Example
+
+./ipgen/ipgen.sh 192.168.1.1-6 output.txt
+
+output:
+    192.168.1.1
+    192.168.1.2
+    192.168.1.3
+    192.168.1.4
+    192.168.1.5
+    192.168.1.6
+
+
 ## Obfuscating a script using python and deobfuscating it and executing it or output it on the shell
 
 
@@ -163,7 +179,7 @@ Ideas and what i need to do:
 
 -in monitor script i should add more scripts minimonitor (no kill) pidimonoitor (Just monitor)
 
--a script to chmod all the scripts
+-a script to chmod all the scripts and pip install all requiements
 
 
 

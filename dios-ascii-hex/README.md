@@ -1,6 +1,6 @@
 ##README: Understanding DIOS in SQL Injection
 What is DIOS?
-DIOS stands for Database Induced Object Substitution. It is a term used in SQL injection attacks to describe a technique that leverages database objects, often encoded in hexadecimal, to bypass filters or security mechanisms. DIOS can be used to insert values like HTML tags or script tags into the database’s output in a way that manipulates how the output is interpreted, potentially leading to Cross-Site Scripting (XSS) or other unintended behaviors.
+DIOS stands for Database Induced Object Substitution. It is a term used in SQL injection attacks to describe a technique that leverages database objects, often encoded in hexadecimal, to bypass filters or security mechanisms. DIOS can be used to insert values like HTML tags or script tags into the databases output in a way that manipulates how the output is interpreted, potentially leading to Cross-Site Scripting (XSS) or other unintended behaviors.
 
 ##Why DIOS is Useful in SQL Injection
 In SQL injection, attackers often face filtering mechanisms that detect keywords or patterns associated with injection. By using hex-encoded strings, attackers can:
