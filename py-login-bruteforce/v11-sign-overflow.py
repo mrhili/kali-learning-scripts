@@ -50,8 +50,8 @@ def main():
 
     # SLOWLY
     # for job in range(350):
-        # sendAndGetRequest(url, cookie, dataSlow)
-        # sleep(0.2)
+    #     sendAndGetRequest(url, cookie, dataSlow)
+    #     sleep(0.2)
 
 
 if __name__ == '__main__':
