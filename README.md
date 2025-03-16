@@ -16,6 +16,10 @@
 
 /sort_domains/sort_domains.sh <file> <output>
 
+## SEPARATE DOMAINS
+
+/domains_separate/separate.sh <file> <main_domain>
+
 ## KALI LINUX SCRIPTS
 
 ##--------------------------------
