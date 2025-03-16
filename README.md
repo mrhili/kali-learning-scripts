@@ -2,11 +2,19 @@
 
 ## BUG BOUNTY SCRIPTS
 
+##--------------------------------
+
 ## RECON USING MASSDNS
 
 /recon-massdns/recon-massdns.sh <long domain> <keyword to startwith>
 
+## DOMAIN TREE
 
+/domain_tree/domain_tree.sh <file> > <output>
+
+## KALI LINUX SCRIPTS
+
+##--------------------------------
 
 
 ## Backup scripts for youre favorite folder
@@ -17,6 +25,30 @@
 
 /files-manager-script/manager
 
+## Translate popular commands from linux to powershell
+
+/basic-bash2powershell-translator/basictranslator.sh curl ipinfo.io/52.156.12.167
+
+## Simple ip generation and verry flexible
+
+
+Example
+
+./ipgen/ipgen.sh 192.168.1.1-6 output.txt
+
+output:
+    192.168.1.1
+    192.168.1.2
+    192.168.1.3
+    192.168.1.4
+    192.168.1.5
+    192.168.1.6
+
+## SECURITY SCRIPTS
+
+##--------------------------------
+
+
 ## generate good passwords and evaluate them
 
 /password-evaluator/evaluator.sh and /password-generator/generator.sh passwords.txt
@@ -25,14 +57,13 @@
 
 sudo /machine-id-regenaration/re.sh
 
-## Regenerate machine id
+## Change host name
 
 sudo /hostname-change/change.sh
 
+## UNCATEGORIZED SCRIPTS
 
-## Translate popular commands from linux to powershell
-
-/basic-bash2powershell-translator/basictranslator.sh curl ipinfo.io/52.156.12.167
+##--------------------------------
 
 
 ## Offline mac research
@@ -56,20 +87,7 @@ Example 2
 /monitor/unmonitor.sh wlan0
 
 
-## Simple ip generation and verry flexible
 
-
-Example
-
-./ipgen/ipgen.sh 192.168.1.1-6 output.txt
-
-output:
-    192.168.1.1
-    192.168.1.2
-    192.168.1.3
-    192.168.1.4
-    192.168.1.5
-    192.168.1.6
 
 
 ## Obfuscating a script using python and deobfuscating it and executing it or output it on the shell
@@ -155,7 +173,11 @@ output:
     Failed login with Username: adomin@ssrd.io Password: matthew (HTTP status: 400)
     Failed login with Username: adomin@ssrd.io Password: robert (HTTP status: 400)
 
+## iterate through number to generate serie
 
+Example
+
+/iterate/iterate.sh template§§.com 5 7
 
 ## Proof of concept of localStorage Stealer
 
