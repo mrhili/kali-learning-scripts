@@ -12,6 +12,10 @@
 
 /domain_tree/domain_tree.sh <file> > <output>
 
+## SORT DOMAINS
+
+/sort_domains/sort_domains.sh <file> <output>
+
 ## KALI LINUX SCRIPTS
 
 ##--------------------------------
