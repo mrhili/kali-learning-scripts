@@ -1,5 +1,14 @@
 # Some scripts i write when i was teatching kali linux
 
+## BUG BOUNTY SCRIPTS
+
+## RECON USING MASSDNS
+
+/recon-massdns/recon-massdns.sh <long domain> <keyword to startwith>
+
+
+
+
 ## Backup scripts for youre favorite folder
 
 /backup-script-work-with-crontab/backup.sh
