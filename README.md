@@ -20,6 +20,12 @@
 
 /domains_separate/separate.sh <file> <main_domain>
 
+# STATUS SPLIT
+SPLIT DOMAINS BY PROBING STATUS
+
+./split.sh <file> 
+./split.sh <file> <file> <file>
+
 ## KALI LINUX SCRIPTS
 
 ##--------------------------------
