@@ -26,6 +26,11 @@ SPLIT DOMAINS BY PROBING STATUS
 ./split.sh <file> 
 ./split.sh <file> <file> <file>
 
+# PORT LOOKUP
+drop youre ports and the scrpt give you nowledge about them
+
+./port_lookup.sh
+
 ## KALI LINUX SCRIPTS
 
 ##--------------------------------
