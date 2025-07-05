@@ -29,7 +29,12 @@ SPLIT DOMAINS BY PROBING STATUS
 # PORT LOOKUP
 drop youre ports and the scrpt give you nowledge about them
 
-./port_lookup.sh
+./port_lookup/port_lookup.sh
+
+# PYTHON SERVER
+drop youre ports and the scrpt give you nowledge about them
+
+python python_server/serve.py
 
 ## KALI LINUX SCRIPTS
 
