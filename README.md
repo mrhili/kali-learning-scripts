@@ -36,6 +36,11 @@ drop youre ports and the scrpt give you nowledge about them
 
 python python_server/serve.py
 
+# REDIRECTOR
+python redirector server for bypass ip filters maybe
+
+python redirector/redirector.py
+
 ## KALI LINUX SCRIPTS
 
 ##--------------------------------
