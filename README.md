@@ -1,251 +1,290 @@
-# Some scripts i write when i was teatching kali linux
+# Kali Linux Teaching Scripts
 
-## BUG BOUNTY SCRIPTS
+This repository contains a collection of Bash and Python scripts I created while teaching Kali Linux and exploring offensive security and automation.
 
-##--------------------------------
+---
 
-## RECON USING MASSDNS
+## Bug Bounty Scripts
 
-/recon-massdns/recon-massdns.sh <long domain> <keyword to startwith>
+### Recon with MassDNS
 
-## DOMAIN TREE
+```bash
+/recon-massdns/recon-massdns.sh <long_domain> <keyword_to_start_with>
+```
 
-/domain_tree/domain_tree.sh <file> > <output>
+### Domain Tree Visualization
 
-## SORT DOMAINS
+```bash
+/domain_tree/domain_tree.sh <input_file> > <output_file>
+```
 
-/sort_domains/sort_domains.sh <file> <output>
+### Sort Domains
 
-## SEPARATE DOMAINS
+```bash
+/sort_domains/sort_domains.sh <input_file> <output_file>
+```
 
-/domains_separate/separate.sh <file> <main_domain>
+### Separate Domains by Main Domain
 
-# STATUS SPLIT
-SPLIT DOMAINS BY PROBING STATUS
+```bash
+/domains_separate/separate.sh <input_file> <main_domain>
+```
 
-./split.sh <file> 
-./split.sh <file> <file> <file>
+### Split Domains by HTTP Status
 
-# PORT LOOKUP
-drop youre ports and the scrpt give you nowledge about them
+```bash
+./split.sh <file>
+./split.sh <file1> <file2> <file3>
+```
 
+### Port Lookup
+
+```bash
 ./port_lookup/port_lookup.sh
+```
 
-# PYTHON SERVER
-drop youre ports and the scrpt give you nowledge about them
+### Python Web Server
 
+```bash
 python python_server/serve.py
+```
 
-# REDIRECTOR
-python redirector server for bypass ip filters maybe
+### Redirector (Bypass IP Filters)
 
+```bash
 python redirector/redirector.py
+```
 
-# WEASY
-python reader stream output for wesy generated pdf with a payload like <link rel="attachment" href="file:///etc/passwd" />
-but the wkhtml portion is bypased with <iframe src="http://localhost/local.txt" height=800px width=800px></iframe>
+### Weasy PDF Payload Reader
 
+```bash
 python weasy/weasy.py
+```
 
-## KALI LINUX SCRIPTS
+This script reads WeasyPrint-generated PDFs with payloads such as:
 
-##--------------------------------
+```html
+<link rel="attachment" href="file:///etc/passwd" />
+<iframe src="http://localhost/local.txt" height="800px" width="800px"></iframe>
+```
 
+---
 
-## Backup scripts for youre favorite folder
+## Kali Linux Scripts
 
+### Backup Script (cron-compatible)
+
+```bash
 /backup-script-work-with-crontab/backup.sh
+```
 
-## Simple file manager list and navigate and serach
+### File Manager with Search & Navigation
 
+```bash
 /files-manager-script/manager
+```
 
-## Translate popular commands from linux to powershell
+### Translate Bash to PowerShell
 
+```bash
 /basic-bash2powershell-translator/basictranslator.sh curl ipinfo.io/52.156.12.167
+```
 
-## Simple ip generation and verry flexible
+### IP Generator
 
-
-Example
-
+```bash
 ./ipgen/ipgen.sh 192.168.1.1-6 output.txt
+```
 
-output:
-    192.168.1.1
-    192.168.1.2
-    192.168.1.3
-    192.168.1.4
-    192.168.1.5
-    192.168.1.6
+Output:
 
-## SECURITY SCRIPTS
+```
+192.168.1.1
+192.168.1.2
+...
+192.168.1.6
+```
 
-##--------------------------------
+---
 
+## Security Scripts
 
-## generate good passwords and evaluate them
+### Password Generation & Evaluation
 
-/password-evaluator/evaluator.sh and /password-generator/generator.sh passwords.txt
+```bash
+/password-generator/generator.sh passwords.txt
+/password-evaluator/evaluator.sh passwords.txt
+```
 
-## Regenerate machine id
+### Regenerate Machine ID
 
+```bash
 sudo /machine-id-regenaration/re.sh
+```
 
-## Change host name
+### Change Hostname
 
+```bash
 sudo /hostname-change/change.sh
+```
 
-## UNCATEGORIZED SCRIPTS
+---
 
-##--------------------------------
+## Uncategorized Scripts
 
+### Offline MAC Address Research
 
-## Offline mac research
-
+```bash
 /offline-mac-research/search.sh 50:46:5D:6E:8C:20
+```
 
-## Searc ip address from mac address in youre local network
+### Find Local IP from MAC
 
+```bash
 /search-local-ip-from-mac/search.sh 50:46:5D:6E:8C:20
+```
 
+### Monitor Mode Scripts
 
-## turn you wireless card to mode monitor or managed
-
-
-Example 1
-
+```bash
 /monitor/monitor.sh wlan0
-
-Example 2
-
 /monitor/unmonitor.sh wlan0
+```
 
+---
 
+## Obfuscation & Execution (Python)
 
+### Obfuscate Python Script
 
+```bash
+python3 /obfs_python/obfs.py example.py obfs.py
+```
 
-## Obfuscating a script using python and deobfuscating it and executing it or output it on the shell
+### Deobfuscate and Execute
 
+```bash
+python3 /obfs_python/deobfs.py obfs.py --execute
+```
 
-## Obfuscating
-Obfuscating using base64
+### Deobfuscate and Output
 
-    ## Example
+```bash
+python3 /obfs_python/deobfs.py obfs.py --output=reveal.py
+```
 
-        python3 /obfs_python/obfs.py example.py obfs.py
+---
 
-## DeObfuscating and executing
-Deobfuscating using base64
+## Initial Kali Configuration
 
-    ## Example
+```bash
+./configure/configure.sh
+```
 
-        python3 /obfs_python/deobfs.py obfs.py --execute
+Output:
 
-## DeObfuscating and saving
-Deobfuscating using base64
+```
+[+] Update and upgrade machine
+[OK]
+```
 
-    ## Example
+---
 
-        python3 /obfs_python/deobfs.py obfs.py --output=reveal.py
-## Kali linux staring configuration
+## Tools & Utilities
 
-    ## Example
-    ./configure/configure.sh
+### RedHCP (Dynamic DHCP Script)
 
-    output:
-        [+] Update and upgrade machine
-        [OK]
-
-
-## REDHCP
-
+```bash
 /redhcp/redhcp.sh
+```
 
+### DIOS (SQLi Payload Generator)
 
-## DIOS FOR SQL INJECTION
-
+```bash
 /dios-ascii-hex/dios.sh
+```
 
+### WFuzz Analyzer
 
+Edit these variables inside the script first:
 
-# AUtomatic analyzer for WFUZZ
-
-First
-Change the variable for common variables then lunch the script
-
+```bash
 col2_value=200
 col3_value=29
 col5_value=190
 col7_min=3700
 col7_max=380
+```
 
-Example
+Then run:
 
+```bash
 ./analyze.sh
+```
 
-# Simple brute force script using python to find username then search for password
+### Python Brute-force Login
 
+```bash
+python ./py-login-bruteforce/bruteforce_v3.py --url <login_url> --cookie "session=..." --userlist <userlist.txt> --passlist <passwords.txt> --mode both --threads 10
+```
 
-Example
+### cURL Brute-force Login
 
+```bash
+./login-bruteforce.sh -u "http://example/api/Auth/Login" -U "admin@example.com" -P /usr/share/wordlists/rockyou.txt
+```
 
-python ./py-login-bruteforce/bruteforce_v3.py --url https://0ae0007b035857a48088cb8d00e9004c.web-security-academy.net/login --cookie "session=uiToflANyW8coEuKYEtA8cGH40jmZa40" --userlist auth_username.txt --passlist auth_password.txt --mode both --threads 10
+Output:
 
-# Simple brute force script using curl with automation
+```
+Failed login... Success! Username: ... Password: ...
+```
 
+### Domain Iteration Generator
 
-Example
-
-./login-bruteforce.sh -u "http://secb/api/Auth/Login" -U "adomin@ssrd.io" -P /usr/share/wordlists/rockyou.txt
-
-output:
-
-    Failed login with Username: adomin@ssrd.io Password: matthew (HTTP status: 400)
-    Failed login with Username: adomin@ssrd.io Password: robert (HTTP status: 400)
-    Success! Username: adomin@ssrd.io Password: snailmail
-    Failed login with Username: adomin@ssrd.io Password: eminem (HTTP status: 400)
-    Failed login with Username: adomin@ssrd.io Password: matthew (HTTP status: 400)
-    Failed login with Username: adomin@ssrd.io Password: robert (HTTP status: 400)
-
-## iterate through number to generate serie
-
-Example
-
+```bash
 /iterate/iterate.sh template§§.com 5 7
+```
 
-## Proof of concept of localStorage Stealer
+---
 
-    ## Usage
-    git clone https://github.com/mrhili/demo-localStorage-stealer
+## Projects & Games
 
-## CTF GAME : HACKSIM GAME
+### LocalStorage Stealer PoC
 
-    ## Usage
-    git clone https://github.com/mrhili/HackSim && cd HackSim && python3 -m pip install -r requirements.txt && python3 main.py
+```bash
+git clone https://github.com/mrhili/demo-localStorage-stealer
+```
 
-## Real GAME HACKED : Guess this code by mansour code
+### HackSim CTF Game
 
-    git clone https://github.com/mrhili/guessthiscode.com-userscript
-    addit to temper-monkey and visit guessthiscode.com and play the hack
+```bash
+git clone https://github.com/mrhili/HackSim
+cd HackSim
+python3 -m pip install -r requirements.txt
+python3 main.py
+```
 
-## Play with cryptography :VGNR
+### GuessThisCode by mansour Hack Game
 
-    git clone https://github.com/mrhili/vgnr && cd vgnr && python3 -m pip install -e
-# -----------------------
+```bash
+git clone https://github.com/mrhili/guessthiscode.com-userscript
+```
 
+Add to Tampermonkey and visit guessthiscode.com to play.
 
+### VGNR Crypto Game
 
+```bash
+git clone https://github.com/mrhili/vgnr
+cd vgnr
+python3 -m pip install -e
+```
 
+---
 
+## To-Do & Ideas
 
-Ideas and what i need to do:
-
--Make all the scripts in one script like the lazy script
-
--in monitor script i should add more scripts minimonitor (no kill) pidimonoitor (Just monitor)
-
--a script to chmod all the scripts and pip install all requiements
-
-
-
+* Combine all scripts into a single LazyScript-style menu.
+* Improve monitor script with additional modes: `mini-monitor` (non-kill) and `pidi-monitor` (passive).
+* Add script to `chmod +x` all scripts and install all Python dependencies automatically.
