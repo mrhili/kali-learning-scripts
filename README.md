@@ -68,6 +68,16 @@ This script reads WeasyPrint-generated PDFs with payloads such as:
 <iframe src="http://localhost/local.txt" height="800px" width="800px"></iframe>
 ```
 
+
+---
+
+## CRACKING
+
+### CRACK ZIP FILES
+
+```bash
+./crackzip/crackzip.sh
+```
 ---
 
 ## Kali Linux Scripts
@@ -288,3 +298,13 @@ python3 -m pip install -e
 * Combine all scripts into a single LazyScript-style menu.
 * Improve monitor script with additional modes: `mini-monitor` (non-kill) and `pidi-monitor` (passive).
 * Add script to `chmod +x` all scripts and install all Python dependencies automatically.
+
+
+
+## Tips and tricks on kali linux
+
+* snapshot before full upgrade
+* do full upgrade
+* on every upgrade do : install linux header
+* sudo ./VBoxLinux
+
