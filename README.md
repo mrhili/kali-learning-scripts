@@ -43,6 +43,16 @@ This repository contains a collection of Bash and Python scripts I created while
 ./port_lookup/port_lookup.sh
 ```
 
+### POLYMORPHIC XSS GENERATOR
+
+```bash
+git clone https://github.com/mrhili/web-play/tree/main/polymorphic-xss
+cd polymorphic-xss
+python3 static_poly_gen.py
+python3 poly_gen.py
+```
+
+
 ### Python Web Server
 
 ```bash
