@@ -4,6 +4,31 @@ This repository contains a collection of Bash and Python scripts I created while
 
 ---
 
+## Quick Start (Dashboard)
+
+Run the LazyScript-style dashboard to access everything in one place:
+
+```bash
+bash dashboard.sh
+```
+
+---
+
+## Experimental Lab: Internet Ownership (ASN Expansion)
+
+Goal: Expand ASNs into CIDRs, normalize into scan targets, and output `targets.txt`.
+
+```bash
+./internet-ownership/asn_expand.sh -a "AS13335,AS15169"
+```
+
+Notes:
+* Uses `whois` by default.
+* Optional: add `--use-bgphe` and/or `--use-ipinfo --ipinfo-token <TOKEN>`.
+* If `targets.txt` would be huge, you will be asked to confirm.
+
+---
+
 ## Bug Bounty Scripts
 
 ### Recon with MassDNS
@@ -305,7 +330,6 @@ python3 -m pip install -e
 
 ## To-Do & Ideas
 
-* Combine all scripts into a single LazyScript-style menu.
 * Improve monitor script with additional modes: `mini-monitor` (non-kill) and `pidi-monitor` (passive).
 * Add script to `chmod +x` all scripts and install all Python dependencies automatically.
 
