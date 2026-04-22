@@ -1,17 +1,27 @@
-# simple Staring configuration for kali linux
+# Kali base configure
 
+Run:
 
-Example
-
+```bash
+chmod u+x configure.sh
 ./configure.sh
+```
 
-output:
-    [+] Update and upgrade machine
-    [OK]
+Optional flags:
 
+- `--dry-run`
+- `--skip-upgrade`
+- `--skip-passwords`
+- `--skip-gvm`
 
+This script is now idempotent:
 
+- skips apt packages already installed,
+- skips tools already present in `PATH`,
+- avoids duplicate alias lines.
 
-# Dont forget to chmod u+x the scripts before using
+---
 
-# then run the script with ./configure.sh
+For KIRCT web workflow profile, use:
+
+- `../kirct-web-profile/kirct-web-profile.sh`

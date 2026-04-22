@@ -233,6 +233,14 @@ Output:
 [OK]
 ```
 
+## KIRCT Web Profile
+
+```bash
+./kirct-web-profile/kirct-web-profile.sh --profile=core
+```
+
+This profile is separated from `configure/` on purpose and is focused on KIRCT web workflow + operator brain wrappers.
+
 ---
 
 ## Tools & Utilities
